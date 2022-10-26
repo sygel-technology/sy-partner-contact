@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[reorder_partner_firstname_lastname](reorder_partner_firstname_lastname/) | 11.0.1.0.0 | Reorder firstname and lastname fields in the views
+[module_name](module_name/) | 15.0.1.0.0 | description
 
 [//]: # (end addons)
