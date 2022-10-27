@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[module_name](module_name/) | 15.0.1.0.0 | description
+[contact_referred](contact_referred/) | 15.0.1.0.0 | Contact Referred Field
 
 [//]: # (end addons)
