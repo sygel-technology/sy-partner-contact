@@ -13,7 +13,8 @@
     "installable": True,
     "depends": [
         'base',
-        'contacts'
+        'contacts',
+        'base_old_migration_fields'
     ],   
     "data": [
         "views/res_partner_views.xml",
