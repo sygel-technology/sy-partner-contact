@@ -8,10 +8,10 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <xpath expr="//page[@name='internal_notes']" position='after'>
-                <page name="migration_info" string="Migration Info">
+                <page name="migration_info" string="Migration Info" groups="base_old_migration_fields.group_old_migration_fields_manager">
                     <group>
                         <group>
-                            <field name="old_partner_id" />
+                            <field name="old_partner_id" groups="base_old_migration_fields.group_old_migration_fields_manager"/>
                         </group>
                     </group>
                 </page>
