@@ -4,7 +4,7 @@
 {
     "name": "Partner contact old acc number",
     "summary": "Partner contact old acc number",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Accounting/CRM",
     "website": "https://www.sygel.es",
     "author": "Sygel, Odoo Community Association (OCA)",
