@@ -27,4 +27,16 @@
             </xpath>
         </field>
     </record>
+
+    <record id="partner_contact_old_acc_number_view_res_partner_filter" model="ir.ui.view">
+        <field name="name">partner.contact.old.acc.number.view.res.partner.filter</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position='after'>
+                <field name="old_customer_acc_number" filter_domain="[('old_customer_acc_number', 'ilike', self)]"/>
+                <field name="old_vendor_acc_number" filter_domain="[('old_vendor_acc_number', 'ilike', self)]"/>
+            </xpath>
+        </field>
+    </record>
 </odoo>
