@@ -7,7 +7,8 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[partner_contact_old_acc_number](partner_contact_old_acc_number/) | 16.0.1.0.0 | Partner contact old acc number
-[partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 16.0.1.0.0 | Saves and displays contacts fields pre-migration.
+[base_partner_sequence_contacts](/base_partner_sequence_contacts) | 16.0.1.0.0 | Apply sequence to all contacts
+[partner_contact_old_acc_number](/partner_contact_old_acc_number) | 16.0.1.0.0 | Partner contact old acc number
+[partner_contact_old_migration_fields](/partner_contact_old_migration_fields) | 16.0.1.0.0 | Saves and displays contacts fields pre-migration.
 
 [//]: # (end addons)
