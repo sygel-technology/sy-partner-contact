@@ -1,0 +1,37 @@
+<odoo>
+<!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+    <record id="partner_communication_view_move_form" model="ir.ui.view">
+        <field name="name">partner.communication.view.move.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <field name="invoice_vendor_bill_id" position="after">
+                <field name="partner_communication_channel_id" options="{'no_create_edit': True, 'no_create': True}"/>
+            </field>
+        </field>
+    </record>
+    <record id="partner_communication_view_invoice_tree" model="ir.ui.view">
+        <field name="name">partner.communication.view.invoice.tree</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="partner_communication_channel_id" optional="hide"/>
+            </field>
+        </field>
+    </record>
+    <record id="partner_communication_view_account_invoice_filter" model="ir.ui.view">
+        <field name="name">partner.communication.view.account.invoice.filter</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="partner_communication_channel_id" string="Communication Channel" filter_domain="[('partner_communication_channel_id', 'ilike', self)]"/>
+            </field>
+            <filter name="status" position="after">
+                <filter string="Communication Channel" name="partner_communication_channel" domain="[]" context="{'group_by':'partner_communication_channel_id'}"/>
+            </filter>
+        </field>
+    </record>
+</odoo>
