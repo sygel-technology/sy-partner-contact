@@ -1,0 +1,47 @@
+<odoo>
+<!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+    <record id="partner_communication_view_order_form" model="ir.ui.view">
+        <field name="name">partner.communication.view.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_shipping_id" position="after">
+                <field name="partner_communication_channel_id" options="{'no_create_edit': True, 'no_create': True}"/>
+            </field>
+        </field>
+    </record>
+    <record id="partner_communication_view_order_tree" model="ir.ui.view">
+        <field name="name">partner.communication.view.order.tree</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="partner_communication_channel_id" optional="hide"/>
+            </field>
+        </field>
+    </record>
+    <record id="partner_communication_view_quotation_tree" model="ir.ui.view">
+        <field name="name">partner.communication.view.quotation.tree</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="partner_communication_channel_id" optional="hide"/>
+            </field>
+        </field>
+    </record>
+    <record id="partner_communication_view_sales_order_filter" model="ir.ui.view">
+        <field name="name">partner.communication.view.sales.order.filter</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="partner_communication_channel_id" string="Communication Channel" filter_domain="[('partner_communication_channel_id', 'ilike', self)]"/>
+            </field>
+            <filter name="salesperson" position="after">
+                <filter string="Communication Channel" name="communication_channel" domain="[]" context="{'group_by':'partner_communication_channel_id'}"/>
+            </filter>
+        </field>
+    </record>
+</odoo>
