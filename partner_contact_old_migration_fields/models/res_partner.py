@@ -10,3 +10,6 @@ class Partner(models.Model):
     old_partner_id = fields.Integer(
         string='Old Partner ID',
     )
+    old_partner_parent_id = fields.Integer(
+        string='Old Partner Parent ID',
+    )
