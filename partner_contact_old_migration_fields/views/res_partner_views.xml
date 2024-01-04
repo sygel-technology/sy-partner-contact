@@ -12,6 +12,7 @@
                     <group>
                         <group>
                             <field name="old_partner_id" groups="base_old_migration_fields.group_old_migration_fields_manager"/>
+                            <field name="old_partner_parent_id" groups="base_old_migration_fields.group_old_migration_fields_manager"/>
                         </group>
                     </group>
                 </page>
