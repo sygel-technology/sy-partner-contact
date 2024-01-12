@@ -22,8 +22,8 @@
         <field name="inherit_id" ref="base.view_partner_tree"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='country_id']" position='after'>
-                <field name="old_customer_acc_number" optional="show"/>
-                <field name="old_vendor_acc_number" optional="show"/>
+                <field name="old_customer_acc_number" />
+                <field name="old_vendor_acc_number" />
             </xpath>
         </field>
     </record>
