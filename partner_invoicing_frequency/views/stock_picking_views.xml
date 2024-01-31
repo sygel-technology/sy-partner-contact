@@ -1,0 +1,37 @@
+<odoo>
+<!-- Copyright 2024 Alberto Martínez <alberto.martínez@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+    <record id="partner_invoicing_frecuency_view_picking_form" model="ir.ui.view">
+        <field name="name">partner.invoicing.frecuency.view.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="partner_invoicing_frecuency_id" optional="hide" options="{'no_create_edit': True, 'no_create': True}"/>
+            </field>
+        </field>
+    </record>
+    <record id="partner_invoicing_frecuency_vpicktree" model="ir.ui.view">
+        <field name="name">partner.invoicing.frecuency.vpicktree</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="partner_invoicing_frecuency_id" optional="hide"/>
+            </field>
+        </field>
+    </record>
+    <record id="partner_invoicing_frecuency_view_picking_internal_search" model="ir.ui.view">
+        <field name="name">partner.invoicing.frecuency.view.picking.internal.search</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_internal_search"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="partner_invoicing_frecuency_id" string="Invoicing Frecuency" filter_domain="[('partner_invoicing_frecuency_id', 'ilike', self)]"/>
+            </field>
+            <filter name="picking_type" position="after">
+                <filter string="Invoicing Frecuency" name="partner_invoicing_frecuency" domain="[]" context="{'group_by':'partner_invoicing_frecuency_id'}"/>
+            </filter>
+        </field>
+    </record>
+</odoo>
