@@ -1,7 +1,7 @@
 # Copyright 2024 Alberto Martínez <alberto.martínez@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class ResPartner(models.Model):
@@ -11,3 +11,7 @@ class ResPartner(models.Model):
         comodel_name="partner.invoicing.frecuency",
         string="Invoicing Frecuency"
     )
+
+    @api.model
+    def _commercial_fields(self):
+        return super()._commercial_fields() + ["partner_invoicing_frecuency_id"]
