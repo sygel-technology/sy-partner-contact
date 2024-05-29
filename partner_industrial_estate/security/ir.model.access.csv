@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+res_partner_industrial_estate_security,res_partner_industrial_estate_security,model_res_partner_industrial_estate,base.group_user,1,1,1,1

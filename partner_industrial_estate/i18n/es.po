@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_industrial_estate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-10 16:05+0000\n"
+"PO-Revision-Date: 2024-06-10 16:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__code
+msgid "Code"
+msgstr "Código"
+
+#. module: partner_industrial_estate
+#: model:ir.model,name:partner_industrial_estate.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_industrial_estate
+#. odoo-python
+#: code:addons/partner_industrial_estate/models/res_partner_industrial_estate.py:0
+#: model_terms:ir.ui.view,arch_db:partner_industrial_estate.res_partner_industrial_estate_form_view
+#, python-format
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__id
+msgid "ID"
+msgstr ""
+
+#. module: partner_industrial_estate
+#: model:ir.model,name:partner_industrial_estate.model_res_partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner__industrial_estate_id
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_users__industrial_estate_id
+#: model_terms:ir.ui.view,arch_db:partner_industrial_estate.view_res_partner_filter_industrial_estate
+msgid "Industrial Estate"
+msgstr "Polígono industrial"
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner__industrial_estate_name
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_users__industrial_estate_name
+msgid "Industrial Estate Name"
+msgstr "Nombre"
+
+#. module: partner_industrial_estate
+#: model_terms:ir.ui.view,arch_db:partner_industrial_estate.view_partner_form_industrial_estate
+msgid "Industrial Estate..."
+msgstr "Polígono industrial..."
+
+#. module: partner_industrial_estate
+#: model:ir.actions.act_window,name:partner_industrial_estate.res_partner_industrial_estate_action
+#: model:ir.ui.menu,name:partner_industrial_estate.menu_res_partner_industrial_estate
+msgid "Industrial estates"
+msgstr "Polígonos industriales"
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: partner_industrial_estate
+#: model:ir.model.fields,field_description:partner_industrial_estate.field_res_partner_industrial_estate__res_partner_count
+msgid "Number of Contacts"
+msgstr "Número de contactos"
+
+#. module: partner_industrial_estate
+#: model:ir.model.constraint,message:partner_industrial_estate.constraint_res_partner_industrial_estate_code_uniq
+msgid ""
+"You already have a industrial state with that code. The code must be unique."
+" "
+msgstr ""
+"Ya tiene un polígono industrial con ese código. El código debe ser único "
+
+#. module: partner_industrial_estate
+#: model:ir.model.constraint,message:partner_industrial_estate.constraint_res_partner_industrial_estate_name_uniq
+msgid ""
+"You already have a industrial state with that name. The name must be unique."
+" "
+msgstr ""
+"Ya tiene un polígono industrial con ese nombre. El nombre debe ser único "
