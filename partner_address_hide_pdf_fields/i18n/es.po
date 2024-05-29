@@ -1,0 +1,32 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_address_hide_pdf_fields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-29 11:19+0000\n"
+"PO-Revision-Date: 2024-05-29 11:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_address_hide_pdf_fields
+#: model:ir.model,name:partner_address_hide_pdf_fields.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_address_hide_pdf_fields
+#: model_terms:ir.ui.view,arch_db:partner_address_hide_pdf_fields.res_country_form_address_hide_pdf_fields
+msgid ""
+"Warning: Some fields will not appear in the PDF reports due to the "
+"installation of the partner_address_hide_pdf_fields module and its dependant"
+" ones"
+msgstr ""
+"Aviso: Algunos campos no aparecerán en los informes PDF debido a la "
+"instalación del módulo partner_address_hide_pdf_fields "
+"y los que dependen de él"
