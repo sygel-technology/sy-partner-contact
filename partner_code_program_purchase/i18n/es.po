@@ -1,0 +1,35 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_code_program_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-06 15:58+0000\n"
+"PO-Revision-Date: 2024-06-06 15:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_code_program_purchase
+#: model:ir.model.fields,field_description:partner_code_program_purchase.field_purchase_order__code_program_id
+#: model:ir.model.fields,field_description:partner_code_program_purchase.field_purchase_report__code_program_id
+#: model_terms:ir.ui.view,arch_db:partner_code_program_purchase.purchase_order_view_search_inherit_partner_code_program
+#: model_terms:ir.ui.view,arch_db:partner_code_program_purchase.view_purchase_order_filter_inherit_partner_code_program
+#: model_terms:ir.ui.view,arch_db:partner_code_program_purchase.view_purchase_order_search_inherit_partner_code_program
+msgid "Code Program"
+msgstr "Código de programa"
+
+#. module: partner_code_program_purchase
+#: model:ir.model,name:partner_code_program_purchase.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: partner_code_program_purchase
+#: model:ir.model,name:partner_code_program_purchase.model_purchase_report
+msgid "Purchase Report"
+msgstr "Informe de Compras"
