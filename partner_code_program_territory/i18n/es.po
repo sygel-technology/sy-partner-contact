@@ -1,0 +1,147 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_code_program_territory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-10 16:15+0000\n"
+"PO-Revision-Date: 2024-06-10 16:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__code
+msgid "Code"
+msgstr "Código"
+
+#. module: partner_code_program_territory
+#: model:ir.model,name:partner_code_program_territory.model_res_partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__code_program_id
+msgid "Code Program"
+msgstr "Código de programa"
+
+#. module: partner_code_program_territory
+#: model_terms:ir.ui.view,arch_db:partner_code_program_territory.res_partner_code_program_form_view_inherit_territory
+msgid "Code Program Territories"
+msgstr "Códigos de territorio"
+
+#. module: partner_code_program_territory
+#. odoo-python
+#: code:addons/partner_code_program_territory/models/res_partner_code_program.py:0
+#: model:ir.model,name:partner_code_program_territory.model_res_partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner__code_program_territory_id
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program__code_program_territory_ids
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory_mixin__code_program_territory_id
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_users__code_program_territory_id
+#: model_terms:ir.ui.view,arch_db:partner_code_program_territory.view_res_partner_filter_code_program_territory
+#, python-format
+msgid "Code Program Territory"
+msgstr "Código de territorio"
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner__code_program_territory_name
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_users__code_program_territory_name
+msgid "Code Program Territory Name"
+msgstr "Nombre del código de territorio"
+
+#. module: partner_code_program_territory
+#: model_terms:ir.ui.view,arch_db:partner_code_program_territory.view_partner_form_code_program_territory
+msgid "Code Program Territory..."
+msgstr "Código de territorio..."
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: partner_code_program_territory
+#: model:ir.model,name:partner_code_program_territory.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_code_program_territory
+#. odoo-python
+#: code:addons/partner_code_program_territory/models/res_partner_code_program_territory.py:0
+#: model_terms:ir.ui.view,arch_db:partner_code_program_territory.res_partner_code_program_form_view
+#: model_terms:ir.ui.view,arch_db:partner_code_program_territory.res_partner_code_program_territory_form_view
+#, python-format
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__id
+msgid "ID"
+msgstr ""
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: partner_code_program_territory
+#: model:ir.model,name:partner_code_program_territory.model_res_partner_code_program_territory_mixin
+msgid ""
+"Mixin model for applying to any object that wants to have a code program "
+"territory"
+msgstr ""
+"Modelo mixin para aplicar a cualquier objeto que quiera tener un código de "
+"territorio"
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__name
+msgid "Name"
+msgstr "Nombre\t\t\t"
+
+#. module: partner_code_program_territory
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program__code_terriroty_count
+#: model:ir.model.fields,field_description:partner_code_program_territory.field_res_partner_code_program_territory__res_partner_count
+msgid "Number of Contacts"
+msgstr "Número de contactos"
+
+#. module: partner_code_program_territory
+#: model:ir.actions.act_window,name:partner_code_program_territory.res_partner_code_program_territory_action
+#: model:ir.ui.menu,name:partner_code_program_territory.menu_res_partner_code_program_territory
+msgid "Program Territory Codes"
+msgstr "Códigos de territorio"
+
+#. module: partner_code_program_territory
+#: model:ir.model.constraint,message:partner_code_program_territory.constraint_res_partner_code_program_territory_code_uniq
+msgid ""
+"You already have a code program territory with that code. The code must be "
+"unique. "
+msgstr ""
+"Ya tiene un código de territorio con ese código. El código debe ser único. "
+
+#. module: partner_code_program_territory
+#: model:ir.model.constraint,message:partner_code_program_territory.constraint_res_partner_code_program_territory_name_uniq
+msgid ""
+"You already have a code program territory with that name. The name must be "
+"unique. "
+msgstr ""
+"Ya tiene un código de territorio con ese nombre. El nombre debe ser único. "
