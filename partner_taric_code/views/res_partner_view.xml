@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="res_partner_form_inherit_taric">
+            <field name="name">res.partner.form.inherit.taric</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='industry_id']" position="after">
+                    <field name="taric_code_ids" widget="many2many_tags" domain="['|', ('company_id', '=', company_id), ('company_id', '=', False)]"
+                        options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
