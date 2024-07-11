@@ -1,15 +1,43 @@
+
+<!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
+[![Pre-commit Status](https://github.com/sygel-technology/sy-partner-contact/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/sygel-technology/sy-partner-contact/actions/workflows/pre-commit.yml?query=branch%3A16.0)
+[![Build Status](https://github.com/sygel-technology/sy-partner-contact/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/sygel-technology/sy-partner-contact/actions/workflows/test.yml?query=branch%3A16.0)
+[![codecov](https://codecov.io/gh/sygel-technology/sy-partner-contact/branch/16.0/graph/badge.svg)](https://codecov.io/gh/sygel-technology/sy-partner-contact)
+<!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
+
+<!-- /!\ do not modify above this line -->
+
 # sy-partner-contact
+
 Odoo Partner and Contact related addons
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
 
 [//]: # (addons)
 
 Available addons
 ----------------
-addon | version | summary
---- | --- | ---
-[base_partner_sequence_contacts](/base_partner_sequence_contacts) | 16.0.1.0.0 | Apply sequence to all contacts
-[partner_communication](/partner_communication) | 16.0.1.0.0 | Select a communication channel in partners
-[partner_contact_old_acc_number](/partner_contact_old_acc_number) | 16.0.1.0.0 | Partner contact old acc number
-[partner_contact_old_migration_fields](/partner_contact_old_migration_fields) | 16.0.1.0.0 | Saves and displays contacts fields pre-migration.
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[base_partner_sequence_contacts](base_partner_sequence_contacts/) | 16.0.1.0.0 |  | Apply sequence to all contacts
+[partner_communication](partner_communication/) | 16.0.1.0.0 |  | Select a communication channel in partners
+[partner_contact_old_acc_number](partner_contact_old_acc_number/) | 16.0.1.0.1 |  | Partner contact old acc number
+[partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 16.0.1.0.0 |  | Partner Contact Old Migration Fields
+[partner_invoicing_frequency](partner_invoicing_frequency/) | 16.0.1.0.0 |  | Select a invoicing frecuency in partners
 
 [//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Sygel, Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+<!-- /!\ Non OCA Context : Set here the full description of your organization. -->
