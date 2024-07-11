@@ -13,7 +13,10 @@ class PurchaseReport(models.Model):
     )
 
     def _select(self):
-        return super(PurchaseReport, self)._select() + ", partner.code_program_id as code_program_id"
+        return (
+            super(PurchaseReport, self)._select()
+            + ", partner.code_program_id as code_program_id"
+        )
 
     def _group_by(self):
         return super(PurchaseReport, self)._group_by() + ", partner.code_program_id"
