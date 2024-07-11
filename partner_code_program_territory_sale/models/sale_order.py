@@ -6,7 +6,4 @@ from odoo import models
 
 class SaleOrder(models.Model):
     _name = "sale.order"
-    _inherit = [
-        "sale.order",
-        "res.partner.code.program.territory.mixin"
-    ]
+    _inherit = ["sale.order", "res.partner.code.program.territory.mixin"]

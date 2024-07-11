@@ -10,6 +10,6 @@ class ResPartner(models.Model):
     @api.model
     def _hided_in_pdf_address_fields(self):
         return super()._hided_in_pdf_address_fields() + [
-            'industrial_estate_id',
-            'industrial_estate_name'
+            "industrial_estate_id",
+            "industrial_estate_name",
         ]

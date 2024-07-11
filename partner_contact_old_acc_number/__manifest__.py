@@ -6,14 +6,14 @@
     "summary": "Partner contact old acc number",
     "version": "17.0.1.0.1",
     "category": "Accounting/CRM",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-partner-contact",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
     "depends": [
-        'base',
-        'account',
+        "base",
+        "account",
     ],
     "data": [
         "views/res_partner_views.xml",
