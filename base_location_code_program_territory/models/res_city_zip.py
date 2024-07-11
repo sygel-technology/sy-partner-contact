@@ -8,8 +8,12 @@ class ResCityZip(models.Model):
     _inherit = "res.city.zip"
 
     _rec_names_search = [
-        "name", "city_id", "state_id", "country_id",
-        "code_program_id", "code_program_territory_id"
+        "name",
+        "city_id",
+        "state_id",
+        "country_id",
+        "code_program_id",
+        "code_program_territory_id",
     ]
 
     code_program_id = fields.Many2one(
@@ -23,7 +27,7 @@ class ResCityZip(models.Model):
         domain="['|', ('code_program_id', '=?', code_program_id), ('code_program_id', '=', False)]",
     )
 
-    @api.onchange('code_program_id')
+    @api.onchange("code_program_id")
     def _onchange_code_program_id(self):
         if (
             self.code_program_id
@@ -32,7 +36,7 @@ class ResCityZip(models.Model):
         ):
             self.code_program_territory_id = False
 
-    @api.onchange('code_program_territory_id')
+    @api.onchange("code_program_territory_id")
     def _onchange_code_program_territory_id(self):
         if (
             self.code_program_territory_id.code_program_id
@@ -56,6 +60,5 @@ class ResCityZip(models.Model):
                 name_add += f"{rec.code_program_id.name}, "
             if name_add:
                 rec.display_name = rec.display_name.replace(
-                    rec.country_id.name,
-                    name_add + rec.country_id.name
+                    rec.country_id.name, name_add + rec.country_id.name
                 )
