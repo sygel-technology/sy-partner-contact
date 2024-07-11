@@ -8,13 +8,7 @@
     "license": "AGPL-3",
     "author": "Sygel",
     "category": "Contact",
-    "depends": [
-        "contacts",
-        "sale",
-        "account",
-        "purchase",
-        "stock"
-    ],
+    "depends": ["contacts", "sale", "account", "purchase", "stock"],
     "data": [
         "security/ir.model.access.csv",
         "views/partner_invoicing_frecuency_views.xml",
@@ -22,7 +16,7 @@
         "views/sale_order_views.xml",
         "views/account_move_views.xml",
         "views/purchase_views.xml",
-        "views/stock_picking_views.xml"
+        "views/stock_picking_views.xml",
     ],
     "installable": True,
 }
