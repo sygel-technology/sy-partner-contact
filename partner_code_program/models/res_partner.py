@@ -10,19 +10,16 @@ class ResPartner(models.Model):
     code_program_id = fields.Many2one(
         string="Code Program",
         comodel_name="res.partner.code.program",
-        ondelete='restrict',
+        ondelete="restrict",
     )
     code_program_name = fields.Char(
         string="Code Program Name",
-        related='code_program_id.name',
+        related="code_program_id.name",
     )
 
     @api.model
     def _address_fields(self):
-        return super()._address_fields() + [
-            'code_program_id',
-            'code_program_name'
-        ]
+        return super()._address_fields() + ["code_program_id", "code_program_name"]
 
     @api.model
     def _commercial_fields(self):
