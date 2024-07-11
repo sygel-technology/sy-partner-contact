@@ -12,9 +12,9 @@
     "application": False,
     "installable": True,
     "depends": [
-        'base',
-        'account',
-    ],   
+        "base",
+        "account",
+    ],
     "data": [
         "views/res_partner_views.xml",
     ],

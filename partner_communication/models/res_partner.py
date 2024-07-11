@@ -8,6 +8,5 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     partner_communication_channel_id = fields.Many2one(
-        comodel_name="partner.communication.channel",
-        string="Communication Channel"
+        comodel_name="partner.communication.channel", string="Communication Channel"
     )

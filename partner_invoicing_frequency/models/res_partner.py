@@ -8,8 +8,7 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     partner_invoicing_frecuency_id = fields.Many2one(
-        comodel_name="partner.invoicing.frecuency",
-        string="Invoicing Frecuency"
+        comodel_name="partner.invoicing.frecuency", string="Invoicing Frecuency"
     )
 
     @api.model
