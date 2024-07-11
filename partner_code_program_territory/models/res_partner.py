@@ -10,15 +10,15 @@ class ResPartner(models.Model):
     code_program_territory_id = fields.Many2one(
         string="Code Program Territory",
         comodel_name="res.partner.code.program.territory",
-        ondelete='restrict',
+        ondelete="restrict",
         domain="['|', ('code_program_id', '=?', code_program_id), ('code_program_id', '=', False)]",
     )
     code_program_territory_name = fields.Char(
         string="Code Program Territory Name",
-        related='code_program_territory_id.name',
+        related="code_program_territory_id.name",
     )
 
-    @api.onchange('code_program_id')
+    @api.onchange("code_program_id")
     def _onchange_code_program_id(self):
         if (
             self.code_program_id
@@ -27,7 +27,7 @@ class ResPartner(models.Model):
         ):
             self.code_program_territory_id = False
 
-    @api.onchange('code_program_territory_id')
+    @api.onchange("code_program_territory_id")
     def _onchange_code_program_territory_id(self):
         if (
             self.code_program_territory_id.code_program_id
@@ -38,8 +38,8 @@ class ResPartner(models.Model):
     @api.model
     def _address_fields(self):
         return super()._address_fields() + [
-            'code_program_territory_id',
-            'code_program_territory_name'
+            "code_program_territory_id",
+            "code_program_territory_name",
         ]
 
     @api.model
