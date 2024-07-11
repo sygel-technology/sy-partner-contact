@@ -10,18 +10,18 @@ class ResPartner(models.Model):
     industrial_estate_id = fields.Many2one(
         string="Industrial Estate",
         comodel_name="res.partner.industrial.estate",
-        ondelete='restrict',
+        ondelete="restrict",
     )
     industrial_estate_name = fields.Char(
         string="Industrial Estate Name",
-        related='industrial_estate_id.name',
+        related="industrial_estate_id.name",
     )
 
     @api.model
     def _address_fields(self):
         return super()._address_fields() + [
-            'industrial_estate_id',
-            'industrial_estate_name'
+            "industrial_estate_id",
+            "industrial_estate_name",
         ]
 
     @api.model

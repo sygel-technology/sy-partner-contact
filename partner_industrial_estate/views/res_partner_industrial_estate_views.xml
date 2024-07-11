@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
-
 <odoo>
 
     <record id="res_partner_industrial_estate_action" model="ir.actions.act_window">
@@ -25,8 +24,17 @@
         <field name="arch" type="xml">
             <form>
                 <div class="oe_button_box" name="button_box">
-                    <button class="oe_stat_button" type="object" name="action_view_res_partner" icon="fa-address-book">
-                        <field string="Contacts" name="res_partner_count" widget="statinfo"/>
+                    <button
+                        class="oe_stat_button"
+                        type="object"
+                        name="action_view_res_partner"
+                        icon="fa-address-book"
+                    >
+                        <field
+                            string="Contacts"
+                            name="res_partner_count"
+                            widget="statinfo"
+                        />
                     </button>
                 </div>
                 <group>
@@ -42,7 +50,10 @@
         <field name="model">res.partner.industrial.estate</field>
         <field name="arch" type="xml">
             <search>
-                <field name="name" filter_domain="['|',('name', 'ilike', self), ('code', 'ilike', self)]"/>
+                <field
+                    name="name"
+                    filter_domain="['|',('name', 'ilike', self), ('code', 'ilike', self)]"
+                />
             </search>
         </field>
     </record>
