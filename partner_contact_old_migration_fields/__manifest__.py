@@ -11,11 +11,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": [
-        'base',
-        'contacts',
-        'base_old_migration_fields'
-    ],   
+    "depends": ["base", "contacts", "base_old_migration_fields"],
     "data": [
         "views/res_partner_views.xml",
     ],
