@@ -5,7 +5,7 @@ from odoo import models
 
 
 class Contact(models.AbstractModel):
-    _inherit = 'ir.qweb.field.contact'
+    _inherit = "ir.qweb.field.contact"
 
     def value_to_html(self, value, options):
         self.env.context = self.with_context(inside_pdf=True).env.context

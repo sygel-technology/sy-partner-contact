@@ -10,6 +10,6 @@ class ResPartner(models.Model):
     @api.model
     def _hided_in_pdf_address_fields(self):
         return super()._hided_in_pdf_address_fields() + [
-            'code_program_id',
-            'code_program_name'
+            "code_program_id",
+            "code_program_name",
         ]

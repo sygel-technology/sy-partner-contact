@@ -42,5 +42,6 @@ class ResPartner(models.Model):
     def _compute_code_program_territory_id(self):
         for record in self:
             if record.zip_id:
-                record.code_program_territory_id =\
+                record.code_program_territory_id = (
                     record.zip_id.code_program_territory_id
+                )
