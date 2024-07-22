@@ -10,9 +10,8 @@ class ResPartnerCodeProgram(models.Model):
 
     _rec_names_search = ["name", "code"]
 
-    name = fields.Char(string="Name", required=True, translate=True)
+    name = fields.Char(required=True, translate=True)
     code = fields.Char(
-        string="Code",
         required=True,
     )
     res_partner_count = fields.Integer(
