@@ -24,7 +24,8 @@ class ResCityZip(models.Model):
     code_program_territory_id = fields.Many2one(
         string="Code Program Territory",
         comodel_name="res.partner.code.program.territory",
-        domain="['|', ('code_program_id', '=?', code_program_id), ('code_program_id', '=', False)]",
+        domain="['|', ('code_program_id', '=?', code_program_id),\
+            ('code_program_id', '=', False)]",
     )
 
     @api.onchange("code_program_id")
@@ -51,7 +52,7 @@ class ResCityZip(models.Model):
         "code_program_territory_id.name",
     )
     def _compute_display_name(self):
-        super()._compute_display_name()
+        res = super()._compute_display_name()
         for rec in self:
             name_add = ""
             if rec.code_program_territory_id:
@@ -62,3 +63,4 @@ class ResCityZip(models.Model):
                 rec.display_name = rec.display_name.replace(
                     rec.country_id.name, name_add + rec.country_id.name
                 )
+        return res

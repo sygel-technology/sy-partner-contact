@@ -6,7 +6,8 @@ from odoo import api, fields, models
 
 class ResPartnerCodeProgramTerritoryMixin(models.AbstractModel):
     _name = "res.partner.code.program.territory.mixin"
-    _description = "Mixin model for applying to any object that wants to have a code program territory"
+    _description = "Mixin model for applying to any object that wants to have \
+        a code program territory"
 
     code_program_territory_id = fields.Many2one(
         string="Code Program Territory",
