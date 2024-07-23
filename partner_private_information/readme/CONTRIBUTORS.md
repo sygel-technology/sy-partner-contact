@@ -1,0 +1,4 @@
+- Roger Sans
+- Alberto Martínez <alberto.martinez@sygel.es>
+- Valentin Vinagre <valentin.vinagre@sygel.es>
+- Harald Panten <harald.panten@sygel.es>
