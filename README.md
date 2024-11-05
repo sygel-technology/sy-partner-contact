@@ -5,8 +5,8 @@ Odoo Partner and Contact related addons
 
 Available addons
 ----------------
-addon | version | summary
---- | --- | ---
-[partner_contact_old_acc_number](partner_contact_old_acc_number/) | 12.0.1.0.0 | Partner contact old acc number
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[partner_contact_old_acc_number](partner_contact_old_acc_number/) | 12.0.1.0.1 |  | Partner contact old acc number
 
 [//]: # (end addons)
