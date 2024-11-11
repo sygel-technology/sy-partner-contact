@@ -20,7 +20,7 @@ class ResPartner(models.Model):
 
     @api.depends("code_program_id", "code_program_territory_id")
     def _compute_zip_id(self):
-        super()._compute_zip_id()
+        res = super()._compute_zip_id()
         for record in self.filtered("zip_id"):
             fields = ["code_program_id", "code_program_territory_id"]
             for field in fields:
@@ -31,6 +31,7 @@ class ResPartner(models.Model):
                 ):
                     record.zip_id = False
                     break
+        return res
 
     @api.depends("zip_id")
     def _compute_code_program_id(self):

@@ -11,7 +11,8 @@ class ResPartner(models.Model):
         string="Code Program Territory",
         comodel_name="res.partner.code.program.territory",
         ondelete="restrict",
-        domain="['|', ('code_program_id', '=?', code_program_id), ('code_program_id', '=', False)]",
+        domain="['|', ('code_program_id', '=?', code_program_id), \
+            ('code_program_id', '=', False)]",
     )
     code_program_territory_name = fields.Char(
         string="Code Program Territory Name",

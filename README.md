@@ -37,6 +37,8 @@ addon | version | maintainers | summary
 [partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 17.0.1.0.0 |  | Partner Contact Old Migration Fields
 [partner_industrial_estate](partner_industrial_estate/) | 17.0.1.0.0 |  | Adds the partner industrial estate fields on contacts
 [partner_industrial_estate_hide_pdf_fields](partner_industrial_estate_hide_pdf_fields/) | 17.0.1.0.0 |  | Hide the partner industrial estate fields from PDFs
+[partner_private_information](partner_private_information/) | 17.0.1.0.0 |  | Add private information tab in partners.
+[partner_private_information_autocomplete](partner_private_information_autocomplete/) | 17.0.1.0.0 |  | Autocomplete private information tab in partners.
 
 [//]: # (end addons)
 
