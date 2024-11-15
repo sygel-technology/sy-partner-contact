@@ -39,6 +39,7 @@ addon | version | maintainers | summary
 [partner_industrial_estate_hide_pdf_fields](partner_industrial_estate_hide_pdf_fields/) | 17.0.1.0.0 |  | Hide the partner industrial estate fields from PDFs
 [partner_private_information](partner_private_information/) | 17.0.1.0.0 |  | Add private information tab in partners.
 [partner_private_information_autocomplete](partner_private_information_autocomplete/) | 17.0.1.0.0 |  | Autocomplete private information tab in partners.
+[partner_disable_vat_verification](partner_disable_vat_verification/) | 17.0.1.0.0 |  | Disables the VAT check.
 
 [//]: # (end addons)
 
