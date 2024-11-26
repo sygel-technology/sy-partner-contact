@@ -6,7 +6,7 @@
         <field name="name">partner.communication.channel.view.tree</field>
         <field name="model">partner.communication.channel</field>
         <field name="arch" type="xml">
-            <tree string="Communication Channel" editable="bottom">
+            <tree editable="bottom">
                 <field name="name" />
             </tree>
         </field>

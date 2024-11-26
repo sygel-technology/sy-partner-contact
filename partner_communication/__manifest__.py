@@ -8,6 +8,7 @@
     "license": "AGPL-3",
     "author": "Sygel",
     "category": "Contact",
+    "website": "https://github.com/sygel-technology/sy-partner-contact",
     "depends": ["contacts", "sale", "account", "purchase", "stock"],
     "data": [
         "security/ir.model.access.csv",
