@@ -6,7 +6,7 @@
         <field name="name">partner.invoicing.frecuency.view.tree</field>
         <field name="model">partner.invoicing.frecuency</field>
         <field name="arch" type="xml">
-            <tree string="Invoicing Frecuency" editable="bottom">
+            <tree editable="bottom">
                 <field name="name" />
             </tree>
         </field>
