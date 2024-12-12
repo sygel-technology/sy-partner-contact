@@ -12,6 +12,7 @@ setuptools.setup(
         'odoo-addon-partner_communication>=16.0dev,<16.1dev',
         'odoo-addon-partner_contact_old_acc_number>=16.0dev,<16.1dev',
         'odoo-addon-partner_contact_old_migration_fields>=16.0dev,<16.1dev',
+        'odoo-addon-partner_identification_disable>=16.0dev,<16.1dev',
         'odoo-addon-partner_invoicing_frequency>=16.0dev,<16.1dev',
     ],
     classifiers=[
