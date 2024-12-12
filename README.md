@@ -25,6 +25,7 @@ addon | version | maintainers | summary
 [partner_communication](partner_communication/) | 16.0.1.0.0 |  | Select a communication channel in partners
 [partner_contact_old_acc_number](partner_contact_old_acc_number/) | 16.0.1.0.1 |  | Partner contact old acc number
 [partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 16.0.1.0.0 |  | Partner Contact Old Migration Fields
+[partner_identification_disable](partner_identification_disable/) | 16.0.1.0.0 |  | Do not check identification numbers
 [partner_invoicing_frequency](partner_invoicing_frequency/) | 16.0.1.0.0 |  | Select a invoicing frecuency in partners
 
 [//]: # (end addons)
