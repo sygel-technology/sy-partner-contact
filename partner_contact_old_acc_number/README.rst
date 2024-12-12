@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-	:target: http://www.gnu.org/licenses/agpl
-	:alt: License: AGPL-3
+    :target: http://www.gnu.org/licenses/agpl
+    :alt: License: AGPL-3
 
 ==============================
 Partner contact old acc number
@@ -61,11 +61,6 @@ Contributors
 
 * Ángel García de la Chica Herrera <angel.garcia@sygel.es>
 
-
-Maintainer
-~~~~~~~~~~
-
-This module is maintained by Sygel.
 
 Maintainer
 ~~~~~~~~~~

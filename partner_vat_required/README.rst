@@ -28,8 +28,6 @@ ROADMAP
   It is mostly intended for end-users, and can also help
   potential new contributors discovering new features to implement. ]
 
-* ...
-
 
 Bug Tracker
 ===========
