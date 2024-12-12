@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_location_code_program_territory](base_location_code_program_territory/) | 17.0.1.0.0 |  | Associate ZIPs to code programs and code territories
 [partner_address_hide_pdf_fields](partner_address_hide_pdf_fields/) | 17.0.1.0.0 |  | Base module to hide new partner address fields in pdf
+[partner_children_address_autocreate](partner_children_address_autocreate/) | 17.0.1.0.0 |  | Automatic creation of a contact company invoice and delivery adresses
 [partner_code_program](partner_code_program/) | 17.0.1.0.0 |  | Adds the partner code program fields on contacts
 [partner_code_program_account](partner_code_program_account/) | 17.0.1.0.0 |  | Adds the partner code program fields on accounting
 [partner_code_program_hide_pdf_fields](partner_code_program_hide_pdf_fields/) | 17.0.1.0.0 |  | Hide the partner code program fields from PDFs
