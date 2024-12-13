@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="view_partner_form_grandchildren" model="ir.ui.view">
+        <field name="name">res.partner.form.grandchildren</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='child_ids']" position="before">
+                <label
+                    for='child_ids'
+                    string="Children Contacts"
+                    class="fw-bolder mb-3 mt-4 small text-uppercase"
+                />
+            </xpath>
+            <xpath expr="//field[@name='child_ids']" position="after">
+                <group>
+                    <label
+                        for='grandchild_ids'
+                        string="Grandchildren Contacts and others"
+                        colspan="2"
+                        class="fw-bolder mb-3 mt-4 small text-uppercase"
+                    />
+                    <field
+                        name="grandchild_ids"
+                        mode="kanban"
+                        invisible="not grandchild_ids"
+                        colspan="2"
+                        context="{'default_parent_id': active_id, 'default_street': street, 'default_street2': street2, 'default_city': city, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_lang': lang, 'default_user_id': user_id}"
+                        nolabel="1"
+                    >
+                        <kanban>
+                            <field name="id" />
+                            <field name="color" />
+                            <field name="name" />
+                            <field name="title" />
+                            <field name="type" />
+                            <field name="email" />
+                            <field name="parent_id" />
+                            <field name="is_company" />
+                            <field name="function" />
+                            <field name="phone" />
+                            <field name="street" />
+                            <field name="street2" />
+                            <field name="zip" />
+                            <field name="city" />
+                            <field name="country_id" />
+                            <field name="mobile" />
+                            <field name="state_id" />
+                            <field name="image_128" />
+                            <field name="lang" />
+                            <!-- fields in form x2many view to diminish requests -->
+                            <field name="comment" />
+                            <field name="display_name" />
+                            <templates>
+                                <t t-name="kanban-box">
+                                    <t
+                                        t-set="color"
+                                        t-value="kanban_color(record.color.raw_value)"
+                                    />
+                                    <div
+                                        t-att-class="color + (record.title.raw_value == 1 ? ' oe_kanban_color_alert' : '') + ' oe_kanban_global_click'"
+                                    >
+                                        <div class="o_kanban_image">
+                                            <img
+                                                alt="Contact image"
+                                                t-att-src="kanban_image('res.partner', 'avatar_128', record.id.raw_value)"
+                                            />
+                                        </div>
+                                        <div class="oe_kanban_details">
+                                            <field name="name" />
+                                            <div t-if="record.function.raw_value"><field
+                                                    name="function"
+                                                /></div>
+                                            <div t-if="record.email.raw_value"><field
+                                                    name="email"
+                                                    widget="email"
+                                                /></div>
+                                            <div
+                                                t-if="record.type.raw_value != 'contact'"
+                                            >
+                                                <div>
+                                                    <field name="zip" />
+                                                    <field name="city" />
+                                                </div>
+                                                <field
+                                                    t-if="record.state_id.raw_value"
+                                                    name="state_id"
+                                                />
+                                                <field name="country_id" />
+                                            </div>
+                                            <div
+                                                t-if="record.phone.raw_value"
+                                            >Phone: <field name="phone" /></div>
+                                            <div
+                                                t-if="record.mobile.raw_value"
+                                            >Mobile: <field name="mobile" /></div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </templates>
+                        </kanban>
+                        <form string="Contact / Address">
+                            <sheet>
+                                <field
+                                    name="type"
+                                    required="1"
+                                    widget="radio"
+                                    options="{'horizontal': true}"
+                                />
+                                <field name="parent_id" invisible="1" />
+                                <div class="text-muted oe_edit_only">
+                                    <p class="mb-0" invisible="type != 'contact'">
+                                        <span
+                                        >Use this to organize the contact details of employees of a given company (e.g. CEO, CFO, ...).</span>
+                                    </p>
+                                    <p class="mb-0" invisible="type != 'invoice'">
+                                        <span
+                                        >Preferred address for all invoices. Selected by default when you invoice an order that belongs to this company.</span>
+                                    </p>
+                                    <p class="mb-0" invisible="type != 'delivery'">
+                                        <span
+                                        >Preferred address for all deliveries. Selected by default when you deliver an order that belongs to this company.</span>
+                                    </p>
+                                    <p class="mb-0" invisible="type != 'other'">
+                                        <span
+                                        >Other address for the company (e.g. subsidiary, ...)</span>
+                                    </p>
+                                </div>
+                                <hr />
+                                <group>
+                                    <group>
+                                        <field
+                                            name="name"
+                                            string="Contact Name"
+                                            required="type == 'contact'"
+                                        />
+                                        <field
+                                            name="title"
+                                            options="{'no_open': True}"
+                                            placeholder="e.g. Mr."
+                                            invisible="type != 'contact'"
+                                        />
+                                        <field
+                                            name="function"
+                                            placeholder="e.g. Sales Director"
+                                            invisible="type != 'contact'"
+                                        />
+                                        <label
+                                            for="street"
+                                            string="Address"
+                                            invisible="type == 'contact'"
+                                        />
+                                        <div invisible="type == 'contact'">
+                                            <div
+                                                class="o_address_format"
+                                                name="div_address"
+                                            >
+                                                <field
+                                                    name="street"
+                                                    placeholder="Street..."
+                                                    class="o_address_street"
+                                                />
+                                                <field
+                                                    name="street2"
+                                                    placeholder="Street 2..."
+                                                    class="o_address_street"
+                                                />
+                                                <field
+                                                    name="city"
+                                                    placeholder="City"
+                                                    class="o_address_city"
+                                                />
+                                                <field
+                                                    name="state_id"
+                                                    class="o_address_state"
+                                                    placeholder="State"
+                                                    options="{'no_open': True, 'no_quick_create': True}"
+                                                    context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"
+                                                />
+                                                <field
+                                                    name="zip"
+                                                    placeholder="ZIP"
+                                                    class="o_address_zip"
+                                                />
+                                                <field
+                                                    name="country_id"
+                                                    placeholder="Country"
+                                                    class="o_address_country"
+                                                    options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"
+                                                />
+                                            </div>
+                                        </div>
+                                    </group>
+                                    <group>
+                                        <field name="email" widget="email" />
+                                        <field name="phone" widget="phone" />
+                                        <field name="mobile" widget="phone" />
+                                        <field name="company_id" invisible="1" />
+                                    </group>
+                                </group>
+                                <group>
+                                    <field
+                                        name="comment"
+                                        placeholder="Internal notes..."
+                                        nolabel="1"
+                                        colspan="2"
+                                    />
+                                </group>
+                                <field name="lang" invisible="True" />
+                                <field name="image_128" invisible="True" />
+                                <field name="user_id" invisible="True" />
+                            </sheet>
+                        </form>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
