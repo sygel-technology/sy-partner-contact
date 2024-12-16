@@ -1,6 +1,6 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-partner-contact"
-version = "17.0.20241212.0"
+version = "17.0.20241216.0"
 dependencies = [
     "odoo-addon-base_location_code_program_territory>=17.0dev,<17.1dev",
     "odoo-addon-partner_address_hide_pdf_fields>=17.0dev,<17.1dev",
@@ -18,6 +18,8 @@ dependencies = [
     "odoo-addon-partner_contact_old_acc_number>=17.0dev,<17.1dev",
     "odoo-addon-partner_contact_old_migration_fields>=17.0dev,<17.1dev",
     "odoo-addon-partner_disable_vat_verification>=17.0dev,<17.1dev",
+    "odoo-addon-partner_grandchildren>=17.0dev,<17.1dev",
+    "odoo-addon-partner_grandchildren_access_link>=17.0dev,<17.1dev",
     "odoo-addon-partner_industrial_estate>=17.0dev,<17.1dev",
     "odoo-addon-partner_industrial_estate_hide_pdf_fields>=17.0dev,<17.1dev",
     "odoo-addon-partner_private_information>=17.0dev,<17.1dev",

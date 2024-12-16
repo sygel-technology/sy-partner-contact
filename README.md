@@ -37,6 +37,8 @@ addon | version | maintainers | summary
 [partner_contact_old_acc_number](partner_contact_old_acc_number/) | 17.0.1.0.1 |  | Partner contact old acc number
 [partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 17.0.1.0.0 |  | Partner Contact Old Migration Fields
 [partner_disable_vat_verification](partner_disable_vat_verification/) | 17.0.1.0.0 |  | Disables the VAT check
+[partner_grandchildren](partner_grandchildren/) | 17.0.1.0.0 |  | Notebook tag with computed partner grandchildrens in contacts
+[partner_grandchildren_access_link](partner_grandchildren_access_link/) | 17.0.1.0.0 |  | Notebook tag with computed partner grandchildrens in contacts
 [partner_industrial_estate](partner_industrial_estate/) | 17.0.1.0.0 |  | Adds the partner industrial estate fields on contacts
 [partner_industrial_estate_hide_pdf_fields](partner_industrial_estate_hide_pdf_fields/) | 17.0.1.0.0 |  | Hide the partner industrial estate fields from PDFs
 [partner_private_information](partner_private_information/) | 17.0.1.0.0 |  | Add private information tab in partners.
