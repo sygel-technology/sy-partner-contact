@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_grandchildren
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-13 11:11+0000\n"
+"PO-Revision-Date: 2024-12-13 14:10+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "<span>Other address for the company (e.g. subsidiary, ...)</span>"
+msgstr ""
+"<span>Otra dirección de la empresa (por ejemplo, filial, ...)</span>"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid ""
+"<span>Preferred address for all deliveries. Selected by default when you "
+"deliver an order that belongs to this company.</span>"
+msgstr ""
+"<span>Dirección preferida para todos los envíos. Seleccionada por "
+"defecto cuando se entrega un pedido que pertenece a esta empresa.</span>"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid ""
+"<span>Preferred address for all invoices. Selected by default when you "
+"invoice an order that belongs to this company.</span>"
+msgstr ""
+"<span>Dirección preferida para todas las facturas. Seleccionada de forma "
+"predeterminada cuando se factura un pedido que pertenece a esta empresa."
+"</span>"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid ""
+"<span>Use this to organize the contact details of employees of a given "
+"company (e.g. CEO, CFO, ...).</span>"
+msgstr ""
+"<span>Utilice esto para organizar los datos de contacto de los empleados "
+"de una empresa determinada (por ejemplo, CEO, CFO, ...).</span>"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Address"
+msgstr "Dirección"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Children Contacts"
+msgstr "Contactos hijos"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "City"
+msgstr "Ciudad"
+
+#. module: partner_grandchildren
+#: model:ir.model,name:partner_grandchildren.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Contact / Address"
+msgstr "Contacto/dirección"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Contact Name"
+msgstr "Nombre del contacto"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Contact image"
+msgstr "Imagen del contacto"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Country"
+msgstr "País"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Grandchildren Contacts and others"
+msgstr "Contactos nietos y otros"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Internal notes..."
+msgstr "Notas internas..."
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Mobile:"
+msgstr "Móvil:"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "State"
+msgstr "Estado"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Street 2..."
+msgstr "Calle 2..."
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "Street..."
+msgstr "Calle..."
+
+#. module: partner_grandchildren
+#: model:ir.model.fields,field_description:partner_grandchildren.field_res_partner__grandchild_ids
+#: model:ir.model.fields,field_description:partner_grandchildren.field_res_users__grandchild_ids
+msgid "SubContacts"
+msgstr "Subcontactos"
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "ZIP"
+msgstr "C.P."
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "e.g. Mr."
+msgstr "Por ejemplo, Mr."
+
+#. module: partner_grandchildren
+#: model_terms:ir.ui.view,arch_db:partner_grandchildren.view_partner_form_grandchildren
+msgid "e.g. Sales Director"
+msgstr "Por ejemplo, Director de Ventas"
