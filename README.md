@@ -25,6 +25,7 @@ addon | version | maintainers | summary
 [partner_contact_old_acc_number](partner_contact_old_acc_number/) | 15.0.1.0.1 |  | Partner contact old acc number
 [partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 15.0.1.0.0 |  | Partner Contact Old Migration Fields
 [partner_vat_required](partner_vat_required/) | 15.0.1.0.0 |  | VAT required in contacts.
+[partner_vat_search](partner_vat_search/) | 15.0.1.0.0 |  | Search by Vat in partner views
 
 [//]: # (end addons)
 

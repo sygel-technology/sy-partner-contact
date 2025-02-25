@@ -12,6 +12,7 @@ setuptools.setup(
         'odoo-addon-partner_contact_old_acc_number>=15.0dev,<15.1dev',
         'odoo-addon-partner_contact_old_migration_fields>=15.0dev,<15.1dev',
         'odoo-addon-partner_vat_required>=15.0dev,<15.1dev',
+        'odoo-addon-partner_vat_search>=15.0dev,<15.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',
