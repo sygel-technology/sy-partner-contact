@@ -4,7 +4,7 @@
 {
     "name": "Partner Invoicing Frecuency",
     "summary": "Select a invoicing frecuency in partners",
-    "version": "16.0.1.0.0",
+    "version": "17.0.1.0.0",
     "license": "AGPL-3",
     "author": "Sygel",
     "category": "Contact",
