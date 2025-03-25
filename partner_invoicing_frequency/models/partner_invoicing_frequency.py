@@ -4,8 +4,8 @@
 from odoo import fields, models
 
 
-class PartnerInvoicingFrecuency(models.Model):
-    _name = "partner.invoicing.frecuency"
-    _description = "Invoicing Frecuency"
+class PartnerInvoicingfrequency(models.Model):
+    _name = "partner.invoicing.frequency"
+    _description = "Invoicing frequency"
 
     name = fields.Char(required=True)

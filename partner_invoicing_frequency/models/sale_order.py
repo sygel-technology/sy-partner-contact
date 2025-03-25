@@ -6,4 +6,4 @@ from odoo import models
 
 class SaleOrder(models.Model):
     _name = "sale.order"
-    _inherit = ["sale.order", "partner.invoicing.frecuency.mixin"]
+    _inherit = ["sale.order", "partner.invoicing.frequency.mixin"]

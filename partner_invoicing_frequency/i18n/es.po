@@ -23,45 +23,45 @@ msgid "Contact"
 msgstr "Contacto"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency__create_uid
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency__create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency__create_date
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency__create_date
 msgid "Created on"
 msgstr "Creado el"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency__display_name
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency__display_name
 msgid "Display Name"
 msgstr "Nombre para mostrar"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency__id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency__id
 msgid "ID"
 msgstr "ID"
 
 #. module: partner_invoicing_frequency
-#: model:ir.actions.act_window,name:partner_invoicing_frequency.action_partner_invoicing_frecuency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_account_bank_statement_line__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_account_move__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_account_payment__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency_mixin__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_purchase_order__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_res_partner__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_res_users__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_sale_order__partner_invoicing_frecuency_id
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_stock_picking__partner_invoicing_frecuency_id
-#: model:ir.ui.menu,name:partner_invoicing_frequency.menu_partner_invoicing_frecuency
-#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frecuency_purchase_order_view_search
-#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frecuency_view_account_invoice_filter
-#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frecuency_view_picking_internal_search
-#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frecuency_view_purchase_order_filter
-#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frecuency_view_res_partner_filter
-#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frecuency_view_sales_order_filter
-#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frecuency_view_tree
-msgid "Invoicing Frecuency"
+#: model:ir.actions.act_window,name:partner_invoicing_frequency.action_partner_invoicing_frequency
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_account_bank_statement_line__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_account_move__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_account_payment__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency_mixin__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_purchase_order__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_res_partner__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_res_users__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_sale_order__partner_invoicing_frequency_id
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_stock_picking__partner_invoicing_frequency_id
+#: model:ir.ui.menu,name:partner_invoicing_frequency.menu_partner_invoicing_frequency
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_purchase_order_view_search
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_picking_internal_search
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_purchase_order_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_res_partner_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_sales_order_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_tree
+msgid "Invoicing frequency"
 msgstr "Frecuencia de facturación"
 
 #. module: partner_invoicing_frequency
@@ -70,28 +70,28 @@ msgid "Journal Entry"
 msgstr "Asiento contable"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency____last_update
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency____last_update
 msgid "Last Modified on"
 msgstr "Última modificación el"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency__write_uid
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency__write_uid
 msgid "Last Updated by"
 msgstr "Actualizado por"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency__write_date
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency__write_date
 msgid "Last Updated on"
 msgstr "Última actualización el"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frecuency__name
+#: model:ir.model.fields,field_description:partner_invoicing_frequency.field_partner_invoicing_frequency__name
 msgid "Name"
 msgstr "Nombre"
 
 #. module: partner_invoicing_frequency
-#: model:ir.model,name:partner_invoicing_frequency.model_partner_invoicing_frecuency_mixin
-msgid "Partner Invoicing Frecuency Mixin"
+#: model:ir.model,name:partner_invoicing_frequency.model_partner_invoicing_frequency_mixin
+msgid "Partner Invoicing frequency Mixin"
 msgstr "Mixin frecuencia de facturación contacto"
 
 #. module: partner_invoicing_frequency
