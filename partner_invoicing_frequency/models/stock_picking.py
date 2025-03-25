@@ -6,4 +6,4 @@ from odoo import models
 
 class StockPicking(models.Model):
     _name = "stock.picking"
-    _inherit = ["stock.picking", "partner.invoicing.frecuency.mixin"]
+    _inherit = ["stock.picking", "partner.invoicing.frequency.mixin"]

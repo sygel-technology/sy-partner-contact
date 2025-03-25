@@ -7,10 +7,10 @@ from odoo import api, fields, models
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
-    partner_invoicing_frecuency_id = fields.Many2one(
-        comodel_name="partner.invoicing.frecuency", string="Invoicing Frecuency"
+    partner_invoicing_frequency_id = fields.Many2one(
+        comodel_name="partner.invoicing.frequency", string="Invoicing frequency"
     )
 
     @api.model
     def _commercial_fields(self):
-        return super()._commercial_fields() + ["partner_invoicing_frecuency_id"]
+        return super()._commercial_fields() + ["partner_invoicing_frequency_id"]

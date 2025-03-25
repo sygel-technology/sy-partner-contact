@@ -3,10 +3,10 @@
 	:alt: License: AGPL-3
 
 ===================
-Invoicing Frecuency
+Invoicing Frequency
 ===================
 
-This module allows to assign a invoicing frecuency to contacts. This information is transferred to sale order, purchase orders, pickings and invoices, but it can be freely edited.
+This module allows to assign a invoicing frecuenqy to contacts. This information is transferred to sale order, purchase orders, pickings and invoices, but it can be freely edited.
 
 Installation
 ============
@@ -21,7 +21,7 @@ Configuration
 
 To configure the stages of the opportunities that can be transferred, you need to:
 
-#. Go to Contact > Configuration > Invoicing Frecuencies
+#. Go to Contact > Configuration > Invoicing Frequencies
 #. Create as many invoicing frecuencies as needed.
 
 
@@ -30,7 +30,7 @@ Usage
 
 To use this module, you need to:
 
-#. Select a invoicing frecuency in a contact, that will be applied to ale order, purchase orders, pickings and invoices. It can be edited if necessary.
+#. Select a invoicing frecuenqy in a contact, that will be applied to sale order, purchase orders, pickings and invoices. It can be edited if necessary.
 
 
 Bug Tracker
