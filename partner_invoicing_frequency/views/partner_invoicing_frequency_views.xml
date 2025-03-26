@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martínez@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="partner_invoicing_frequency_view_tree" model="ir.ui.view">
+        <field name="name">partner.invoicing.frequency.view.tree</field>
+        <field name="model">partner.invoicing.frequency</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <record id="action_partner_invoicing_frequency" model="ir.actions.act_window">
+        <field name="name">Invoicing.frequency</field>
+        <field name="res_model">partner.invoicing.frequency</field>
+        <field name="view_mode">tree</field>
+    </record>
+    <menuitem
+        id="menu_partner_invoicing_frequency"
+        action="action_partner_invoicing_frequency"
+        name="Invoicing Frequency"
+        parent="contacts.res_partner_menu_config"
+        sequence="99"
+    />
+</odoo>
