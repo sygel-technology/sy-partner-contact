@@ -1,0 +1,1 @@
+This module automatically inherits tags from a parent contact to a child contact when the child is created. If the parent is changed later, the child’s tags remain unchanged. The addon only copies tags during the contact creation process.
