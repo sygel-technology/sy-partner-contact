@@ -65,6 +65,16 @@ msgid "Invoicing frequency"
 msgstr "Frecuencia de facturación"
 
 #. module: partner_invoicing_frequency
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_res_partner_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_sales_order_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_purchase_order_filter
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_purchase_order_view_search
+#: model_terms:ir.ui.view,arch_db:partner_invoicing_frequency.partner_invoicing_frequency_view_picking_internal_search
+msgid "Invoicing Frequency"
+msgstr "Frecuencia de facturación"
+
+#. module: partner_invoicing_frequency
 #: model:ir.model,name:partner_invoicing_frequency.model_account_move
 msgid "Journal Entry"
 msgstr "Asiento contable"
