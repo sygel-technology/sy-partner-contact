@@ -3,7 +3,7 @@
 {
     "name": "Partner Contact Show Ref",
     "summary": "Shows contact ref in contact name",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.1.0",
     "category": "Tools",
     "website": "https://github.com/sygel-technology/sy-partner-contact",
     "author": "Sygel, Odoo Community Association (OCA)",

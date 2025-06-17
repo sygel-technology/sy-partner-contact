@@ -36,7 +36,7 @@ addon | version | maintainers | summary
 [partner_code_program_territory_sale](partner_code_program_territory_sale/) | 17.0.1.0.0 |  | Adds the partner code program territory fields on sales
 [partner_contact_old_acc_number](partner_contact_old_acc_number/) | 17.0.1.0.1 |  | Partner contact old acc number
 [partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 17.0.1.0.0 |  | Partner Contact Old Migration Fields
-[partner_contact_show_ref](partner_contact_show_ref/) | 17.0.1.0.0 |  | Shows contact ref in contact name
+[partner_contact_show_ref](partner_contact_show_ref/) | 17.0.1.1.0 |  | Shows contact ref in contact name
 [partner_disable_vat_verification](partner_disable_vat_verification/) | 17.0.1.0.0 |  | Disables the VAT check
 [partner_grandchildren](partner_grandchildren/) | 17.0.1.0.0 |  | Notebook tag with computed partner grandchildrens in contacts
 [partner_grandchildren_access_link](partner_grandchildren_access_link/) | 17.0.1.0.0 |  | Notebook tag with computed partner grandchildrens in contacts
