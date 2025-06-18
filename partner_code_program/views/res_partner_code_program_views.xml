@@ -2,7 +2,6 @@
 <!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-
     <record id="res_partner_code_program_action" model="ir.actions.act_window">
         <field name="name">Program Codes</field>
         <field name="res_model">res.partner.code.program</field>
@@ -64,5 +63,4 @@
         parent="contacts.res_partner_menu_config"
         sequence="4"
     />
-
 </odoo>
