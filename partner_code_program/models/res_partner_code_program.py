@@ -1,7 +1,7 @@
 # Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import _, fields, models
+from odoo import fields, models
 
 
 class ResPartnerCodeProgram(models.Model):
@@ -28,7 +28,7 @@ class ResPartnerCodeProgram(models.Model):
         return {
             "type": "ir.actions.act_window",
             "res_model": "res.partner",
-            "name": _("Contacts"),
+            "name": self.env._("Contacts"),
             "views": [(False, "tree"), (False, "form")],
             "domain": [("code_program_id", "=", self.id)],
         }
