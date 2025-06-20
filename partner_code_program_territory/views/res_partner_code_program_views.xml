@@ -2,7 +2,6 @@
 <!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-
     <record
         id="res_partner_code_program_form_view_inherit_territory"
         model="ir.ui.view"

@@ -2,7 +2,6 @@
 <!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-
     <record model="ir.ui.view" id="view_partner_form_code_program_territory">
         <field name="name">Partner form with code program territory</field>
         <field name="model">res.partner</field>
@@ -43,5 +42,4 @@
             </xpath>
         </field>
     </record>
-
 </odoo>
