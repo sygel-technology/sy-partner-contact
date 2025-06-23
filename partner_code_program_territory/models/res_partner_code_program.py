@@ -29,6 +29,6 @@ class ResPartnerCodeProgram(models.Model):
             "type": "ir.actions.act_window",
             "res_model": "res.partner.code.program.territory",
             "name": _("Code Program Territory"),
-            "views": [(False, "tree"), (False, "form")],
+            "views": [(False, "list"), (False, "form")],
             "domain": [("code_program_id", "=", self.id)],
         }

@@ -33,7 +33,7 @@ class ResPartnerCodeProgramTerritory(models.Model):
             "type": "ir.actions.act_window",
             "res_model": "res.partner",
             "name": _("Contacts"),
-            "views": [(False, "tree"), (False, "form")],
+            "views": [(False, "list"), (False, "form")],
             "domain": [("code_program_territory_id", "=", self.id)],
         }
 
