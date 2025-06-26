@@ -4,7 +4,7 @@
 {
     "name": "Partner Contact Old Migration Fields",
     "summary": "Partner Contact Old Migration Fields",
-    "version": "17.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Contact",
     "website": "https://github.com/sygel-technology/sy-partner-contact",
     "author": "Sygel, Odoo Community Association (OCA)",
