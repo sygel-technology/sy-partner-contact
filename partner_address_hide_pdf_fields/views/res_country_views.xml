@@ -2,7 +2,6 @@
 <!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-
     <record id="res_country_form_address_hide_pdf_fields" model="ir.ui.view">
         <field name="name">res.country.form.address.hide.pdf.fields</field>
         <field name="model">res.country</field>
@@ -15,5 +14,4 @@
             </xpath>
         </field>
     </record>
-
 </odoo>
