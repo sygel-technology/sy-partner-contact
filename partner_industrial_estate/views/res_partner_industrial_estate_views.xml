@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_partner_industrial_estate_action" model="ir.actions.act_window">
+        <field name="name">Industrial estates</field>
+        <field name="res_model">res.partner.industrial.estate</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="res_partner_industrial_estate_tree_view" model="ir.ui.view">
+        <field name="name">industrial.estate.tree</field>
+        <field name="model">res.partner.industrial.estate</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="code" />
+            </list>
+        </field>
+    </record>
+    <record id="res_partner_industrial_estate_form_view" model="ir.ui.view">
+        <field name="name">industrial.estate.form</field>
+        <field name="model">res.partner.industrial.estate</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="oe_button_box" name="button_box">
+                    <button
+                        class="oe_stat_button"
+                        type="object"
+                        name="action_view_res_partner"
+                        icon="fa-address-book"
+                    >
+                        <field
+                            string="Contacts"
+                            name="res_partner_count"
+                            widget="statinfo"
+                        />
+                    </button>
+                </div>
+                <group>
+                    <field name="name" />
+                    <field name="code" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="res_partner_industrial_estate_search_view" model="ir.ui.view">
+        <field name="name">industrial.estate.search</field>
+        <field name="model">res.partner.industrial.estate</field>
+        <field name="arch" type="xml">
+            <search>
+                <field
+                    name="name"
+                    filter_domain="['|',('name', 'ilike', self), ('code', 'ilike', self)]"
+                />
+            </search>
+        </field>
+    </record>
+
+    <menuitem
+        action="res_partner_industrial_estate_action"
+        id="menu_res_partner_industrial_estate"
+        parent="contacts.res_partner_menu_config"
+        sequence="4"
+    />
+</odoo>

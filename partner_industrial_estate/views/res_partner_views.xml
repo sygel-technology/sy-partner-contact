@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="view_partner_form_industrial_estate">
+        <field name="name">Partner form with industrial estate</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <field name="street2" position="after">
+                <field
+                    name="industrial_estate_id"
+                    placeholder="Industrial Estate..."
+                    readonly="type == 'contact' and parent_id"
+                    options="{'no_open': True}"
+                />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_industrial_estate" model="ir.ui.view">
+        <field name="name">res.partner.select.industrial.estate</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="industrial_estate_id" />
+            </xpath>
+            <xpath expr="//group/filter[@name='salesperson']" position="after">
+                <filter
+                    string="Industrial Estate"
+                    name="industrial_estate"
+                    domain="[]"
+                    context="{'group_by': 'industrial_estate_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
