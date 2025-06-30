@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="view_partner_form_code_program">
+        <field name="name">Partner form with code program</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <field name="zip" position="after">
+                <field
+                    name="code_program_id"
+                    placeholder="Code Program..."
+                    readonly="type == 'contact' and parent_id"
+                    options="{'no_open': True}"
+                />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_code_program" model="ir.ui.view">
+        <field name="name">res.partner.select.code.program</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="code_program_id" />
+            </xpath>
+            <xpath expr="//group/filter[@name='salesperson']" position="after">
+                <filter
+                    string="Code Program"
+                    name="code_program"
+                    domain="[]"
+                    context="{'group_by': 'code_program_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,127 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_code_program
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-10 16:18+0000\n"
+"PO-Revision-Date: 2024-06-10 16:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__code
+msgid "Code"
+msgstr "Código"
+
+#. module: partner_code_program
+#: model:ir.model,name:partner_code_program.model_res_partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner__code_program_id
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program_mixin__code_program_id
+#: model:ir.model.fields,field_description:partner_code_program.field_res_users__code_program_id
+#: model_terms:ir.ui.view,arch_db:partner_code_program.view_res_partner_filter_code_program
+msgid "Code Program"
+msgstr "Código de programa"
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner__code_program_name
+#: model:ir.model.fields,field_description:partner_code_program.field_res_users__code_program_name
+msgid "Code Program Name"
+msgstr "Nombre del código de programa"
+
+#. module: partner_code_program
+#: model_terms:ir.ui.view,arch_db:partner_code_program.view_partner_form_code_program
+msgid "Code Program..."
+msgstr "Código de programa..."
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: partner_code_program
+#: model:ir.model,name:partner_code_program.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_code_program
+#. odoo-python
+#: code:addons/partner_code_program/models/res_partner_code_program.py:0
+#: model_terms:ir.ui.view,arch_db:partner_code_program.res_partner_code_program_form_view
+#, python-format
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__id
+msgid "ID"
+msgstr ""
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: partner_code_program
+#: model:ir.model,name:partner_code_program.model_res_partner_code_program_mixin
+msgid ""
+"Mixin model for applying to any object that wants to have a code program"
+msgstr ""
+"Modelo mixin para aplicar a cualquier objeto que quiera tener código de "
+"programa"
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: partner_code_program
+#: model:ir.model.fields,field_description:partner_code_program.field_res_partner_code_program__res_partner_count
+msgid "Number of Contacts"
+msgstr "Número de contactos"
+
+#. module: partner_code_program
+#: model:ir.actions.act_window,name:partner_code_program.res_partner_code_program_action
+#: model:ir.ui.menu,name:partner_code_program.menu_res_partner_code_program
+msgid "Program Codes"
+msgstr "Códigos de programa"
+
+#. module: partner_code_program
+#: model:ir.model.constraint,message:partner_code_program.constraint_res_partner_code_program_code_uniq
+msgid ""
+"You already have a code program with that code. The code must be unique. "
+msgstr ""
+"Ya tiene un código de programa con ese código. El código debe ser único. "
+
+#. module: partner_code_program
+#: model:ir.model.constraint,message:partner_code_program.constraint_res_partner_code_program_name_uniq
+msgid ""
+"You already have a code program with that name. The name must be unique. "
+msgstr ""
+"Ya tiene un código de programa con ese nombre. El nombre debe ser único. "
