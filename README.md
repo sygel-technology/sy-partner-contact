@@ -24,6 +24,7 @@ addon | version | maintainers | summary
 [partner_code_program](partner_code_program/) | 18.0.1.0.0 |  | Adds the partner code program fields on contacts
 [partner_code_program_account](partner_code_program_account/) | 18.0.1.0.0 |  | Adds the partner code program fields on accounting
 [partner_code_program_purchase](partner_code_program_purchase/) | 18.0.1.0.0 |  | Adds the partner code program fields on purchases
+[partner_code_program_sale](partner_code_program_sale/) | 18.0.1.0.0 |  | Adds the partner code program fields on sales
 
 [//]: # (end addons)
 
