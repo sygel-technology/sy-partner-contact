@@ -16,6 +16,13 @@ Odoo Partner and Contact related addons
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[partner_code_program](partner_code_program/) | 18.0.1.0.0 |  | Adds the partner code program fields on contacts
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->

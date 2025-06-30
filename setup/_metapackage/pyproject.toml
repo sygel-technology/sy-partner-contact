@@ -1,0 +1,11 @@
+[project]
+name = "odoo-addons-sygel-technology-sy-partner-contact"
+version = "18.0.20250630.0"
+dependencies = [
+    "odoo-addon-partner_code_program==18.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 18.0",
+]
