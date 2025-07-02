@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_location_code_program_territory](base_location_code_program_territory/) | 18.0.1.0.0 |  | Associate ZIPs to code programs and code territories
 [partner_code_program](partner_code_program/) | 18.0.1.0.0 |  | Adds the partner code program fields on contacts
 [partner_code_program_account](partner_code_program_account/) | 18.0.1.0.0 |  | Adds the partner code program fields on accounting
 [partner_code_program_purchase](partner_code_program_purchase/) | 18.0.1.0.0 |  | Adds the partner code program fields on purchases
