@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="res_partner_code_program_form_view_inherit_territory"
+        model="ir.ui.view"
+    >
+        <field name="name">code.program.form.inherit.territory</field>
+        <field name="model">res.partner.code.program</field>
+        <field
+            name="inherit_id"
+            ref="partner_code_program.res_partner_code_program_form_view"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_code_terriroty"
+                    icon="fa-globe"
+                >
+                    <field
+                        string="Code Program Territories"
+                        name="code_terriroty_count"
+                        widget="statinfo"
+                    />
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

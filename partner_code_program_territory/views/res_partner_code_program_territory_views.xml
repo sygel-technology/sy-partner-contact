@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="res_partner_code_program_territory_action"
+        model="ir.actions.act_window"
+    >
+        <field name="name">Program Territory Codes</field>
+        <field name="res_model">res.partner.code.program.territory</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="res_partner_code_program_territory_tree_view" model="ir.ui.view">
+        <field name="name">code.program.territory.tree</field>
+        <field name="model">res.partner.code.program.territory</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="code" />
+            </list>
+        </field>
+    </record>
+    <record id="res_partner_code_program_territory_form_view" model="ir.ui.view">
+        <field name="name">code.program.territory.form</field>
+        <field name="model">res.partner.code.program.territory</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="oe_button_box" name="button_box">
+                    <button
+                        class="oe_stat_button"
+                        type="object"
+                        name="action_view_res_partner"
+                        icon="fa-address-book"
+                    >
+                        <field
+                            string="Contacts"
+                            name="res_partner_count"
+                            widget="statinfo"
+                        />
+                    </button>
+                </div>
+                <group>
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                        <field name="code_program_id" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="res_partner_code_program_territory_search_view" model="ir.ui.view">
+        <field name="name">code.program.territory.search</field>
+        <field name="model">res.partner.code.program.territory</field>
+        <field name="arch" type="xml">
+            <search>
+                <field
+                    name="name"
+                    filter_domain="['|',('name', 'ilike', self), ('code', 'ilike', self)]"
+                />
+            </search>
+        </field>
+    </record>
+
+    <menuitem
+        action="res_partner_code_program_territory_action"
+        id="menu_res_partner_code_program_territory"
+        parent="contacts.res_partner_menu_config"
+        sequence="4"
+    />
+</odoo>

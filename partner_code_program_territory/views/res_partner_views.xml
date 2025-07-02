@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="view_partner_form_code_program_territory">
+        <field name="name">Partner form with code program territory</field>
+        <field name="model">res.partner</field>
+        <field
+            name="inherit_id"
+            ref="partner_code_program.view_partner_form_code_program"
+        />
+        <field name="arch" type="xml">
+            <field name="code_program_id" position="before">
+                <field
+                    name="code_program_territory_id"
+                    placeholder="Code Program Territory..."
+                    readonly="type == 'contact' and parent_id"
+                    options="{'no_open': True}"
+                />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_code_program_territory" model="ir.ui.view">
+        <field name="name">res.partner.select.code.program.territory</field>
+        <field name="model">res.partner</field>
+        <field
+            name="inherit_id"
+            ref="partner_code_program.view_res_partner_filter_code_program"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='code_program_id']" position="after">
+                <field name="code_program_territory_id" />
+            </xpath>
+            <xpath expr="//group/filter[@name='code_program']" position="after">
+                <filter
+                    string="Code Program Territory"
+                    name="code_program_territory"
+                    domain="[]"
+                    context="{'group_by': 'code_program_territory_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
