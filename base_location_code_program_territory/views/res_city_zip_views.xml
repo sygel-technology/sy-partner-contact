@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="city_zip_form_program_territory" model="ir.ui.view">
+        <field name="name">res.city.zip.form.program.territory</field>
+        <field name="model">res.city.zip</field>
+        <field name="inherit_id" ref="base_location.city_zip_form" />
+        <field name="arch" type="xml">
+            <field name="city_id" position="after">
+                <field name="code_program_territory_id" />
+                <field name="code_program_id" />
+            </field>
+        </field>
+    </record>
+
+    <record id="city_zip_tree_program_territory" model="ir.ui.view">
+        <field name="name">res.city.zip.tree.program.territory</field>
+        <field name="model">res.city.zip</field>
+        <field name="inherit_id" ref="base_location.city_zip_tree" />
+        <field name="arch" type="xml">
+            <field name="city_id" position="after">
+                <field name="code_program_territory_id" />
+                <field name="code_program_id" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_city_zip_filter_program_territory" model="ir.ui.view">
+        <field name="name">res.city.zip.select.program.territory</field>
+        <field name="model">res.city.zip</field>
+        <field name="inherit_id" ref="base_location.view_city_zip_filter" />
+        <field name="arch" type="xml">
+            <field name="city_id" position="after">
+                <field name="code_program_territory_id" />
+                <field name="code_program_id" />
+                <separator />
+                <group expand="0" name="group_by_program" string="Group By">
+                    <filter
+                        string="Code Program"
+                        name="code_program"
+                        domain="[]"
+                        context="{'group_by': 'code_program_id'}"
+                    />
+                    <filter
+                        string="Code Program Territory"
+                        name="code_program_territory"
+                        domain="[]"
+                        context="{'group_by': 'code_program_territory_id'}"
+                    />
+                </group>
+            </field>
+        </field>
+    </record>
+</odoo>
