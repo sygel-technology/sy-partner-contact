@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="partner_contact_old_migration_fields_view_partner_form"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >partner.contact.old.migration.fields.view.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']" position='after'>
+                <page
+                    name="migration_info"
+                    string="Migration Info"
+                    groups="base_old_migration_fields.group_old_migration_fields_manager"
+                >
+                    <group>
+                        <group>
+                            <field
+                                name="old_partner_id"
+                                groups="base_old_migration_fields.group_old_migration_fields_manager"
+                            />
+                            <field
+                                name="old_partner_parent_id"
+                                groups="base_old_migration_fields.group_old_migration_fields_manager"
+                            />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
