@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="view_purchase_order_filter_inherit_partner_code_program_territory"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >request.quotation.select.inherit.partner.code.program.territory</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.view_purchase_order_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="code_program_territory_id" />
+            </xpath>
+            <xpath expr="//group/filter[@name='vendor']" position="after">
+                <filter
+                    string="Code Program Territory"
+                    name="code_program_territory"
+                    domain="[]"
+                    context="{'group_by': 'code_program_territory_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record
+        id="purchase_order_view_search_inherit_partner_code_program_territory"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >purchase.order.select.inherit.partner.code.program.territory</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_view_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="code_program_territory_id" />
+            </xpath>
+            <xpath expr="//group/filter[@name='vendor']" position="after">
+                <filter
+                    string="Code Program Territory"
+                    name="code_program_territory"
+                    domain="[]"
+                    context="{'group_by': 'code_program_territory_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
