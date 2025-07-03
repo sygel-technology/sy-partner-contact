@@ -3,7 +3,7 @@
 {
     "name": "Partner Code Program Territory Hide PDF Fields",
     "summary": "Hide the partner code program territory fields from PDFs",
-    "version": "17.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Partner Management",
     "website": "https://github.com/sygel-technology/sy-partner-contact",
     "author": "Sygel",
