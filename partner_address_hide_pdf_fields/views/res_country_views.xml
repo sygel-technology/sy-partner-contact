@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_country_form_address_hide_pdf_fields" model="ir.ui.view">
+        <field name="name">res.country.form.address.hide.pdf.fields</field>
+        <field name="model">res.country</field>
+        <field name="inherit_id" ref="base.view_country_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='div_address_format ms-2']" position="inside">
+                <div name="div_address_format_hide_pdf_fields">
+                    Warning: Some fields will not appear in the PDF reports due to the installation of the partner_address_hide_pdf_fields module and its dependant ones
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
