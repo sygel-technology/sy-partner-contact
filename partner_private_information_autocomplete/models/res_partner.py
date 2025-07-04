@@ -58,14 +58,16 @@ class ResPartner(models.Model):
                 "private_state_id": "state_id",
                 "private_country_id": "country_id",
             }
+            mismatch = False
             for rec_field, zip_field in fields_map.items():
                 if (
                     record[rec_field]
                     and record[rec_field] != record._origin[rec_field]
                     and record[rec_field] != record.private_zip_id[zip_field]
                 ):
-                    record.private_zip_id = False
-                    break
+                    mismatch = True
+            if mismatch:
+                record.private_zip_id = False
 
     @api.depends("private_zip_id")
     def _compute_private_city_id(self):

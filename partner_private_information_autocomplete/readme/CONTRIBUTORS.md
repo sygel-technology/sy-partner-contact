@@ -1,4 +1,5 @@
-- Alberto Martínez <alberto.martinez@sygel.es>
-- Roger Sans
-- Valentin Vinagre <valentin.vinagre@sygel.es>
-- Harald Panten <harald.panten@sygel.es>
+- [Sygel](https://www.sygel.es):
+  - Roger Sans
+  - Alberto Martínez
+  - Valentín Vinagee
+  - Harald Panten
