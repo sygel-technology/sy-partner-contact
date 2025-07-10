@@ -370,8 +370,20 @@ ul.auto-toc {
 !! source digest: sha256:350d438ab706b5aabc16f6a4874de7ebb9c81819627fedc573aaf77f4c6b7fe6
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/sygel-technology/sy-partner-contact/tree/18.0/partner_private_information"><img alt="sygel-technology/sy-partner-contact" src="https://img.shields.io/badge/github-sygel--technology%2Fsy--partner--contact-lightgray.png?logo=github" /></a></p>
-<p>This module allows us to add a new tab to the partners file with private
-information that only designated users can view.</p>
+<p>Adds a dedicated “Private Info” tab to Contacts, containing a second set
+of contact data — including phone, mobile, e‑mail, full address, and
+categories — that is only visible and exportable by authorised users.
+This allows separating general contact details from internal-use-only
+data.</p>
+<p>Key Features</p>
+<p>This module provides:</p>
+<ul class="simple">
+<li>A Private Info tab on the partner form view, visible only to users
+with the appropriate access.</li>
+<li>Controlled by the group: Extra Rights / Show partner private info.</li>
+<li>Access is enabled via the user form by checking the option “Show
+partner private info”.</li>
+</ul>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -399,6 +411,9 @@ to view the private information tab in the contact.</li>
 <p>To use this module, you need to:</p>
 <ol class="arabic simple">
 <li>In the contact’s tab we find a tab called private information.</li>
+<li>Tags (partner categories) can be flagged as <strong>Private</strong>. When a
+category is marked as private, it will only be available for
+selection in the <strong>Private Information</strong> tab.</li>
 </ol>
 </div>
 <div class="section" id="bug-tracker">
@@ -420,8 +435,8 @@ If you spotted it first, help us to smash it by providing a detailed and welcome
 <div class="section" id="contributors">
 <h2><a class="toc-backref" href="#toc-entry-6">Contributors</a></h2>
 <ul class="simple">
-<li>Roger Sans</li>
 <li><a class="reference external" href="https://www.sygel.es">Sygel</a>:<ul>
+<li>Roger Sans</li>
 <li>Alberto Martínez</li>
 <li>Valentín Vinagee</li>
 <li>Harald Panten</li>

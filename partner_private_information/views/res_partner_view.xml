@@ -72,12 +72,13 @@
                             <field
                                 name="private_category_ids"
                                 widget="many2many_tags"
+                                groups="partner_private_information.group_partner_private_info"
                             />
                         </group>
                         <group id="right_group">
-                            <field name="private_phone" />
-                            <field name="private_mobile" />
-                            <field name="private_email" />
+                            <field name="private_phone" widget="phone" />
+                            <field name="private_mobile" widget="phone" />
+                            <field name="private_email" widget="email" />
                         </group>
                         <field
                             name="private_notes"
@@ -87,6 +88,9 @@
                         />
                     </group>
                 </page>
+            </xpath>
+            <xpath expr="//field[@name='category_id']" position="attributes">
+                <attribute name="domain">[('is_private', '=', False)]</attribute>
             </xpath>
         </field>
     </record>

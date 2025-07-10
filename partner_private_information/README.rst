@@ -22,8 +22,21 @@ Partner Private Information
 
 |badge1| |badge2| |badge3|
 
-This module allows us to add a new tab to the partners file with private
-information that only designated users can view.
+Adds a dedicated “Private Info” tab to Contacts, containing a second set
+of contact data — including phone, mobile, e‑mail, full address, and
+categories — that is only visible and exportable by authorised users.
+This allows separating general contact details from internal-use-only
+data.
+
+Key Features
+
+This module provides:
+
+- A Private Info tab on the partner form view, visible only to users
+  with the appropriate access.
+- Controlled by the group: Extra Rights / Show partner private info.
+- Access is enabled via the user form by checking the option “Show
+  partner private info”.
 
 **Table of contents**
 
@@ -44,6 +57,9 @@ Usage
 To use this module, you need to:
 
 1. In the contact's tab we find a tab called private information.
+2. Tags (partner categories) can be flagged as **Private**. When a
+   category is marked as private, it will only be available for
+   selection in the **Private Information** tab.
 
 Bug Tracker
 ===========
@@ -66,9 +82,9 @@ Authors
 Contributors
 ------------
 
-- Roger Sans
 - `Sygel <https://www.sygel.es>`__:
 
+  - Roger Sans
   - Alberto Martínez
   - Valentín Vinagee
   - Harald Panten

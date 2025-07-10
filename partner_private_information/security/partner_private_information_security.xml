@@ -8,4 +8,19 @@
             eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
         />
     </record>
+    <record id="rule_hide_private_partner_categories" model="ir.rule">
+        <field name="name">Hide private partner categories</field>
+        <field name="model_id" ref="base.model_res_partner_category" />
+        <field name="domain_force">[('is_private', '=', False)]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]" />
+    </record>
+    <record id="rule_show_all_private_partner_categories" model="ir.rule">
+        <field name="name">Show all private partner categories</field>
+        <field name="model_id" ref="base.model_res_partner_category" />
+        <field
+            name="groups"
+            eval="[(4, ref('partner_private_information.group_partner_private_info'))]"
+        />
+        <field name="domain_force">[('is_private', 'in', (False,True))]</field>
+    </record>
 </odoo>

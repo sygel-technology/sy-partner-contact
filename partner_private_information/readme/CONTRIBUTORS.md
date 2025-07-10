@@ -1,5 +1,5 @@
-- Roger Sans
 - [Sygel](https://www.sygel.es):
+  - Roger Sans
   - Alberto Martínez
   - Valentín Vinagee
   - Harald Panten
