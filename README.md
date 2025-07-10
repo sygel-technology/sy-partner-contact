@@ -25,6 +25,7 @@ addon | version | maintainers | summary
 [partner_address_hide_pdf_fields](partner_address_hide_pdf_fields/) | 18.0.1.1.0 |  | Base module to hide new partner address fields in pdf
 [partner_code_program](partner_code_program/) | 18.0.1.0.0 |  | Adds the partner code program fields on contacts
 [partner_code_program_account](partner_code_program_account/) | 18.0.1.0.0 |  | Adds the partner code program fields on accounting
+[partner_code_program_hide_pdf_fields](partner_code_program_hide_pdf_fields/) | 18.0.1.0.0 |  | Hide the partner code program fields from PDFs
 [partner_code_program_purchase](partner_code_program_purchase/) | 18.0.1.0.0 |  | Adds the partner code program fields on purchases
 [partner_code_program_sale](partner_code_program_sale/) | 18.0.1.0.0 |  | Adds the partner code program fields on sales
 [partner_code_program_territory](partner_code_program_territory/) | 18.0.1.0.0 |  | Adds the partner code program territory fields on contacts
