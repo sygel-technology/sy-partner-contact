@@ -29,6 +29,7 @@ addon | version | maintainers | summary
 [partner_code_program_sale](partner_code_program_sale/) | 18.0.1.0.0 |  | Adds the partner code program fields on sales
 [partner_code_program_territory](partner_code_program_territory/) | 18.0.1.0.0 |  | Adds the partner code program territory fields on contacts
 [partner_code_program_territory_account](partner_code_program_territory_account/) | 18.0.1.0.0 |  | Adds the partner code program territory fields on accounting
+[partner_code_program_territory_hide_pdf_fields](partner_code_program_territory_hide_pdf_fields/) | 18.0.1.0.0 |  | Hide the partner code program territory fields from PDFs
 [partner_code_program_territory_purchase](partner_code_program_territory_purchase/) | 18.0.1.0.0 |  | Adds the partner code program territory fields on purchases
 [partner_code_program_territory_sale](partner_code_program_territory_sale/) | 18.0.1.0.0 |  | Adds the partner code program territory fields on sales
 [partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 18.0.1.0.0 |  | Partner Contact Old Migration Fields
