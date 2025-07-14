@@ -1,6 +1,6 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-partner-contact"
-version = "18.0.20250710.2"
+version = "18.0.20250714.0"
 dependencies = [
     "odoo-addon-base_location_code_program_territory==18.0.*",
     "odoo-addon-partner_address_hide_pdf_fields==18.0.*",
@@ -17,6 +17,7 @@ dependencies = [
     "odoo-addon-partner_contact_old_migration_fields==18.0.*",
     "odoo-addon-partner_industrial_estate==18.0.*",
     "odoo-addon-partner_industrial_estate_hide_pdf_fields==18.0.*",
+    "odoo-addon-partner_private_information==18.0.*",
 ]
 classifiers=[
     "Programming Language :: Python",
