@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="res_partner_form_inherit_private_info">
+        <field name="name">res.partner.form.inherit.private.info</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page
+                    string="Private Info"
+                    name="private_info"
+                    groups="partner_private_information.group_partner_private_info"
+                >
+                    <group>
+                        <group id="left_group">
+                            <span class="o_form_label o_td_label" name="address_name">
+                                <field
+                                    name="type"
+                                    invisible="is_company"
+                                    readonly="user_ids"
+                                    required="not is_company"
+                                    class="fw-bold"
+                                />
+                                <b invisible="not is_company">Address</b>
+                            </span>
+                            <div class="o_address_format">
+                                <field
+                                    name="private_street"
+                                    placeholder="Street..."
+                                    class="o_address_street"
+                                    readonly="type == 'contact' and parent_id"
+                                />
+                                <field
+                                    name="private_street2"
+                                    placeholder="Street 2..."
+                                    class="o_address_street"
+                                    readonly="type == 'contact' and parent_id"
+                                />
+                                <field
+                                    name="private_city"
+                                    placeholder="City"
+                                    class="o_address_city"
+                                    readonly="type == 'contact' and parent_id"
+                                />
+                                <field
+                                    name="private_state_id"
+                                    class="o_address_state"
+                                    placeholder="State"
+                                    options="{'no_open': True, 'no_quick_create': True}"
+                                    readonly="type == 'contact' and parent_id"
+                                    context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"
+                                />
+                                <field
+                                    name="private_zip"
+                                    placeholder="ZIP"
+                                    class="o_address_zip"
+                                    readonly="type == 'contact' and parent_id"
+                                />
+                                <div
+                                    name="private_partner_address_country"
+                                    class="d-flex justify-content-between"
+                                >
+                                    <field
+                                        name="private_country_id"
+                                        placeholder="Country"
+                                        class="o_address_country"
+                                        options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"
+                                        readonly="type == 'contact' and parent_id"
+                                    />
+                                </div>
+                            </div>
+                            <field
+                                name="private_category_ids"
+                                widget="many2many_tags"
+                                groups="partner_private_information.group_partner_private_info"
+                            />
+                        </group>
+                        <group id="right_group">
+                            <field name="private_phone" widget="phone" />
+                            <field name="private_mobile" widget="phone" />
+                            <field name="private_email" widget="email" />
+                        </group>
+                        <field
+                            name="private_notes"
+                            placeholder="Private notes..."
+                            nolabel="1"
+                            colspan="2"
+                        />
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//field[@name='category_id']" position="attributes">
+                <attribute name="domain">[('is_private', '=', False)]</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
