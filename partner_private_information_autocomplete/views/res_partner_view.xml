@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.zip_id.2</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <field name="private_city" position="before">
+                <field
+                    name="private_zip_id"
+                    options="{'create_name_field': 'private_city', 'no_open': True, 'no_create': True}"
+                    placeholder="Private Location completion"
+                    readonly="type == 'contact' and parent_id != False"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

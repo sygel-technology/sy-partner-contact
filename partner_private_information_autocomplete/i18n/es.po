@@ -1,0 +1,58 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_private_information_autocomplete
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-31 12:19+0000\n"
+"PO-Revision-Date: 2024-10-31 12:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_private_information_autocomplete
+#: model:ir.model,name:partner_private_information_autocomplete.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: partner_private_information_autocomplete
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_partner__private_city
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_partner__private_city_id
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_users__private_city
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_users__private_city_id
+msgid "Internal City"
+msgstr "Ciudad"
+
+#. module: partner_private_information_autocomplete
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_partner__private_country_id
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_users__private_country_id
+msgid "Internal Country"
+msgstr "País"
+
+#. module: partner_private_information_autocomplete
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_partner__private_state_id
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_users__private_state_id
+msgid "Internal State"
+msgstr "Provincia"
+
+#. module: partner_private_information_autocomplete
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_partner__private_zip
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_users__private_zip
+msgid "Internal Zip"
+msgstr "ZIP"
+
+#. module: partner_private_information_autocomplete
+#: model_terms:ir.ui.view,arch_db:partner_private_information_autocomplete.view_partner_form
+msgid "Private Location completion"
+msgstr "Completado de ubicación privada"
+
+#. module: partner_private_information_autocomplete
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_partner__private_zip_id
+#: model:ir.model.fields,field_description:partner_private_information_autocomplete.field_res_users__private_zip_id
+msgid "Internal ZIP Location"
+msgstr "Ubicación Interna"
