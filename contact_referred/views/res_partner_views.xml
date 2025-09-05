@@ -15,4 +15,14 @@
             </xpath>
         </field>
     </record>
+    <record id="contact_referred_view_partner_tree" model="ir.ui.view">
+        <field name="name">contact.referred.view.partner.tree</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="referred_contact_id" optional="hide" />
+            </xpath>
+        </field>
+    </record>
 </odoo>
