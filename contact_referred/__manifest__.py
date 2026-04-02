@@ -1,0 +1,16 @@
+# Copyright 2022 Manuel Regidor <manuel.regidor@sygel.es>
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+{
+    "name": "Contact Referred",
+    "version": "18.0.1.0.0",
+    "author": "Sygel",
+    "category": "Contact",
+    "summary": "Referred Contact Field.",
+    "website": "https://github.com/sygel-technology/sy-partner-contact",
+    "depends": [
+        "base",
+    ],
+    "data": ["views/res_partner_views.xml"],
+    "license": "LGPL-3",
+}
