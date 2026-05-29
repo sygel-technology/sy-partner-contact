@@ -34,6 +34,7 @@ addon | version | maintainers | summary
 [partner_code_program_territory_hide_pdf_fields](partner_code_program_territory_hide_pdf_fields/) | 18.0.1.0.0 |  | Hide the partner code program territory fields from PDFs
 [partner_code_program_territory_purchase](partner_code_program_territory_purchase/) | 18.0.1.0.0 |  | Adds the partner code program territory fields on purchases
 [partner_code_program_territory_sale](partner_code_program_territory_sale/) | 18.0.1.0.0 |  | Adds the partner code program territory fields on sales
+[partner_contact_old_acc_number](partner_contact_old_acc_number/) | 18.0.1.0.0 |  | Partner contact old acc number
 [partner_contact_old_migration_fields](partner_contact_old_migration_fields/) | 18.0.1.0.0 |  | Partner Contact Old Migration Fields
 [partner_industrial_estate](partner_industrial_estate/) | 18.0.1.0.0 |  | Adds the partner industrial estate fields on contacts
 [partner_industrial_estate_hide_pdf_fields](partner_industrial_estate_hide_pdf_fields/) | 18.0.1.0.0 |  | Hide the partner industrial estate fields from PDFs
