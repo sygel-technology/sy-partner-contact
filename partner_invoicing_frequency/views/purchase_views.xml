@@ -1,5 +1,5 @@
 <odoo>
-<!-- Copyright 2024 Alberto Martínez <alberto.martínez@sygel.es>
+    <!-- Copyright 2024 Alberto Martínez <alberto.martínez@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
     <record id="partner_invoicing_frequency_purchase_order_form" model="ir.ui.view">
         <field name="name">partner.invoicing.frequency.purchase.order.form</field>
