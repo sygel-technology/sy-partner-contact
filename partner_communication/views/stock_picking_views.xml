@@ -1,5 +1,5 @@
 <odoo>
-<!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+    <!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
     <record id="partner_communication_view_picking_form" model="ir.ui.view">
         <field name="name">partner.communication.view.picking.form</field>
