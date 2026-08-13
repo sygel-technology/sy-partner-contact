@@ -6,15 +6,15 @@
         <field name="name">partner.invoicing.frequency.view.tree</field>
         <field name="model">partner.invoicing.frequency</field>
         <field name="arch" type="xml">
-            <tree editable="bottom">
+            <list editable="bottom">
                 <field name="name" />
-            </tree>
+            </list>
         </field>
     </record>
     <record id="action_partner_invoicing_frequency" model="ir.actions.act_window">
         <field name="name">Invoicing.frequency</field>
         <field name="res_model">partner.invoicing.frequency</field>
-        <field name="view_mode">tree</field>
+        <field name="view_mode">list</field>
     </record>
     <menuitem
         id="menu_partner_invoicing_frequency"
