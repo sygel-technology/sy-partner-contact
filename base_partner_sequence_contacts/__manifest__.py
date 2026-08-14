@@ -1,0 +1,16 @@
+# Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+{
+    "name": "Base Partner Sequence",
+    "summary": "Apply sequence to all contacts",
+    "version": "18.0.1.0.0",
+    "license": "AGPL-3",
+    "author": "Sygel",
+    "category": "Contact",
+    "website": "https://github.com/sygel-technology/sy-partner-contact",
+    "depends": [
+        "base_partner_sequence",
+    ],
+    "installable": True,
+}
