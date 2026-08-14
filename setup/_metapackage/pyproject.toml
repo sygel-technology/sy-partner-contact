@@ -1,8 +1,9 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-partner-contact"
-version = "18.0.20260812.0"
+version = "18.0.20260814.0"
 dependencies = [
     "odoo-addon-base_location_code_program_territory==18.0.*",
+    "odoo-addon-base_partner_sequence_contacts==18.0.*",
     "odoo-addon-contact_referred==18.0.*",
     "odoo-addon-partner_address_hide_pdf_fields==18.0.*",
     "odoo-addon-partner_code_program==18.0.*",

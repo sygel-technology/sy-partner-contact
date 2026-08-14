@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_location_code_program_territory](base_location_code_program_territory/) | 18.0.1.0.0 |  | Associate ZIPs to code programs and code territories
+[base_partner_sequence_contacts](base_partner_sequence_contacts/) | 18.0.1.0.0 |  | Apply sequence to all contacts
 [contact_referred](contact_referred/) | 18.0.1.0.0 |  | Referred Contact Field.
 [partner_address_hide_pdf_fields](partner_address_hide_pdf_fields/) | 18.0.1.1.0 |  | Base module to hide new partner address fields in pdf
 [partner_code_program](partner_code_program/) | 18.0.1.0.0 |  | Adds the partner code program fields on contacts
