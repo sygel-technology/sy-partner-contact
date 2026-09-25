@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sy_partner_guild
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-25 09:15+0000\n"
+"PO-Revision-Date: 2026-09-25 11:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: sy_partner_guild
+#. odoo-python
+#: code:addons/sy_partner_guild/models/res_partner_guild.py:0
+msgid "%s (copy)"
+msgstr "%s (Còpia)"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__active
+msgid "Active"
+msgstr "Actiu"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__color
+msgid "Color"
+msgstr "Color"
+
+#. module: sy_partner_guild
+#: model:ir.model,name:sy_partner_guild.model_res_partner
+msgid "Contact"
+msgstr "Contacte"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__create_date
+msgid "Created on"
+msgstr "Creat en"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__display_name
+msgid "Display Name"
+msgstr "Nom mostrat"
+
+#. module: sy_partner_guild
+#: model:ir.actions.act_window,name:sy_partner_guild.res_partner_guild_action
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner__guild_ids
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_users__guild_ids
+#: model:ir.ui.menu,name:sy_partner_guild.menu_partner_guild
+#: model:ir.ui.menu,name:sy_partner_guild.menu_partner_guild_root
+msgid "Guilds"
+msgstr "Gremis"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__id
+msgid "ID"
+msgstr ""
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__write_uid
+msgid "Last Updated by"
+msgstr "Última actualització per"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__write_date
+msgid "Last Updated on"
+msgstr "Última actualització el"
+
+#. module: sy_partner_guild
+#: model:ir.model.fields,field_description:sy_partner_guild.field_res_partner_guild__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: sy_partner_guild
+#: model:ir.model,name:sy_partner_guild.model_res_partner_guild
+msgid "Partner Guild"
+msgstr "Gremi del contacte"
+
+#. module: sy_partner_guild
+#: model:ir.model.constraint,message:sy_partner_guild.constraint_res_partner_guild_name_uniq
+msgid "The guild name must be unique."
+msgstr "El nom del gremi ha de ser únic."
