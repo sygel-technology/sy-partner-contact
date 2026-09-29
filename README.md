@@ -43,6 +43,7 @@ addon | version | maintainers | summary
 [partner_invoicing_frequency](partner_invoicing_frequency/) | 18.0.1.0.0 |  | Select a invoicing frequency in partners
 [partner_private_information](partner_private_information/) | 18.0.1.0.0 |  | Add private information tab in partners.
 [partner_private_information_autocomplete](partner_private_information_autocomplete/) | 18.0.1.0.0 |  | Autocomplete private information tab in partners.
+[sy_partner_guild](sy_partner_guild/) | 18.0.1.0.0 |  | Manage guilds on partners
 
 [//]: # (end addons)
 
